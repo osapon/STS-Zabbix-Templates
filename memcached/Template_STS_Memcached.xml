@@ -850,7 +850,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template_STS_Memcache:net.tcp.service[tcp,,11211].last(0)}=0</expression>
+            <expression>{Template_STS_Memcached:net.tcp.service[tcp,,11211].last(0)}=0</expression>
             <name>Memcache service is down on {HOSTNAME}</name>
             <url/>
             <status>0</status>
@@ -887,7 +887,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[total_connections]</key>
                     </item>
                 </graph_item>
@@ -919,7 +919,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[curr_items]</key>
                     </item>
                 </graph_item>
@@ -951,7 +951,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[curr_connections]</key>
                     </item>
                 </graph_item>
@@ -983,7 +983,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[evictions]</key>
                     </item>
                 </graph_item>
@@ -1015,7 +1015,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[total_items]</key>
                     </item>
                 </graph_item>
@@ -1047,7 +1047,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[bytes_read]</key>
                     </item>
                 </graph_item>
@@ -1059,7 +1059,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[bytes_written]</key>
                     </item>
                 </graph_item>
@@ -1091,7 +1091,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[cmd_get]</key>
                     </item>
                 </graph_item>
@@ -1103,7 +1103,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[cmd_set]</key>
                     </item>
                 </graph_item>
@@ -1135,7 +1135,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[rusage_user]</key>
                     </item>
                 </graph_item>
@@ -1147,7 +1147,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[rusage_system]</key>
                     </item>
                 </graph_item>
@@ -1179,7 +1179,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[get_hits]</key>
                     </item>
                 </graph_item>
@@ -1191,7 +1191,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[get_misses]</key>
                     </item>
                 </graph_item>
@@ -1223,7 +1223,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[limit_maxbytes]</key>
                     </item>
                 </graph_item>
@@ -1235,7 +1235,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template_STS_Memcache</host>
+                        <host>Template_STS_Memcached</host>
                         <key>memcache[bytes]</key>
                     </item>
                 </graph_item>
